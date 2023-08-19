@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10.0"> 
+    <title>"I Have This" Button</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-8">
+        <label class="inline-flex items-center">
+            <input type="checkbox" id="haveCheckbox" class="form-checkbox h-5 w-5 text-green-500">
+            <span class="ml-2 text-gray-700">Item Name</span>
+        </label>
+        <button id="haveButton" class="mt-2 px-10 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">I Have This</button>
+    </div>
+    
+    <script>
+        const checkbox = document.getElementById('haveCheckbox');
+        const button = document.getElementById('haveButton');
+
+        button.addEventListener('click', () => {
+            checkbox.checked = !checkbox.checked;
+            if (checkbox.checked) {
+                button.classList.remove('bg-blue-500');
+                button.classList.add('bg-green-500');
+                button.textContent = 'Item Owned';
+            } else {
+                button.classList.remove('bg-green-500');
+                button.classList.add('bg-blue-500');
+                button.textContent = 'I Have This';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid View</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-semibold mb-4">Featured Products</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="1.Story.png" alt="Product 1" class="w-full h-48 object-cover mb-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-2">Product 1</h2>
+                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in turpis quis justo suscipit scelerisque.</p>
+                <a href="#" class="mt-2 inline-block px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Buy Now</a>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="https://den-cards.pokellector.com/373/Basic-Fire-Energy.OBF.230.49023.png" alt="Product 2" class="w-full h-48 object-cover mb-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-2">Product 2</h2>
+                <p class="text-gray-700">Vestibulum nec magna ac neque scelerisque commodo a ut ex. In tincidunt ante non lorem cursus lacinia.</p>
+                <a href="#" class="mt-2 inline-block px-3 py-1 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Buy Now</a>
+            </div>
+            
+            <!-- Add more product cards here -->
+        </div>
+    </div>
+</body>
+</html>
